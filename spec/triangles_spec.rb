@@ -21,4 +21,8 @@ end
   test_triangle = Triangle.new(3, 3, 3)
   expect(test_triangle.type).to(eq("this triangle is equilateral"))
   end
+  it("will employ the check_sides method to identify triangles") do
+  test_triangle = Triangle.new(3, 3, 3)
+  expect(test_triangle.check_sides).to(eq("this triangle is equilateral"))
+  end
 end
